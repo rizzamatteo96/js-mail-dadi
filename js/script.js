@@ -7,11 +7,13 @@
 var max = 6;
 var min = 1;
 var numeroComputer = Math.floor(Math.random() * (max - min + 1) + min);
-console.log(numeroComputer);
+// console.log(numeroComputer);
+
 
 // 2 - generare numero random per utente
 var numeroUtente = Math.floor(Math.random() * (max - min + 1) + min);
-console.log(numeroUtente);
+// console.log(numeroUtente);
+
 
 // 3 - confrontare i risultati e vedere chi vince
 var risultato = 'Nessun vincitore';
@@ -22,7 +24,8 @@ if (numeroComputer > numeroUtente) {
     risultato = 'Hai vinto!'
 }
 
-console.log(risultato);
+// console.log(risultato);
+
 
 // 4 - comunicare il risultato al giocatore
 document.getElementById('numero-computer').innerHTML += numeroComputer;
