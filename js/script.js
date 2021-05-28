@@ -14,14 +14,17 @@ var numeroUtente = Math.floor(Math.random() * (max - min + 1) + min);
 console.log(numeroUtente);
 
 // 3 - confrontare i risultati e vedere chi vince
-var risultato = 'nessun vincitore';
+var risultato = 'Nessun vincitore';
 
 if (numeroComputer > numeroUtente) {
-    risultato = 'computer vince!';
+    risultato = 'Computer vince!';
 } else if (numeroUtente > numeroComputer) {
-    risultato = 'hai vinto!'
+    risultato = 'Hai vinto!'
 }
 
 console.log(risultato);
 
 // 4 - comunicare il risultato al giocatore
+document.getElementById('numero-computer').innerHTML += numeroComputer;
+document.getElementById('numero-user').innerHTML += numeroUtente;
+document.getElementById('result').innerHTML = risultato;
