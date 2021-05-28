@@ -26,8 +26,12 @@ if (numeroComputer > numeroUtente) {
 
 // console.log(risultato);
 
+var nome1 = 'img/';
+var nome3 = '.png';
 
 // 4 - comunicare il risultato al giocatore
 document.getElementById('numero-computer').innerHTML += numeroComputer;
+document.getElementById('dado-computer').setAttribute("src", nome1 + numeroComputer + nome3);
 document.getElementById('numero-user').innerHTML += numeroUtente;
+document.getElementById('dado-user').setAttribute("src", nome1 + numeroUtente + nome3);
 document.getElementById('result').innerHTML = risultato;
